@@ -12,7 +12,7 @@ import clases.Producto;
  * @author laboratorio
  */
 public class Nodo {
-    private Producto producto;
+     private Producto producto;
     private Nodo siguiente;
 
     public Nodo(Producto producto) {

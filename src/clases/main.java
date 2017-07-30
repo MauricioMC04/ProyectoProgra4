@@ -6,7 +6,7 @@
 package clases;
 
 
-import frames.ventanaLogin;
+import frames.ventanaLogin_1;
 
 /**
  *
@@ -18,7 +18,7 @@ public class main {
      * @param args the command line arguments
      */
     
-    public static ventanaLogin V;
+    public static ventanaLogin_1 V;
     
     public static void main(String[] args) {
 //        VSDC = new ventanaVendedor();
@@ -34,7 +34,7 @@ public class main {
 //        VA = new ventanaAdministrador();
 //        VA.setVisible(true);
      
-        V = new ventanaLogin();
+        V = new ventanaLogin_1();
         V.setVisible(true);
     }
     

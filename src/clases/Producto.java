@@ -12,13 +12,15 @@ package clases;
 public class Producto {
     private String Nombre;
     private int precio;
+    private String Id;
 
     public Producto() {
     }
 
-    public Producto(String Nombre, int precio) {
+    public Producto(String Nombre, int precio, String Id) {
         this.Nombre = Nombre;
         this.precio = precio;
+        this.Id = Id;
     }
 
     public String getNombre() {
@@ -35,5 +37,13 @@ public class Producto {
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String Id) {
+        this.Id = Id;
     }
 }

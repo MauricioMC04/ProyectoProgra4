@@ -10,6 +10,26 @@ package clases;
  * @author Josue
  */
 public class NodoVenta {
-    private Proceso proceso;
+    private Bebida bebida;
     private NodoVenta siguiente;
+
+    public NodoVenta(Bebida bebida) {
+        this.bebida = bebida;
+    }
+
+    public Bebida getBebida() {
+        return bebida;
+    }
+
+    public void setBebida(Bebida bebida) {
+        this.bebida = bebida;
+    }
+
+    public NodoVenta getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(NodoVenta siguiente) {
+        this.siguiente = siguiente;
+    }
 }

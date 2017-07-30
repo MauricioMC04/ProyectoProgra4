@@ -94,11 +94,11 @@ public class Lista {
         if(!this.isEmpty()){
             Nodo Aux = this.getCabeza();
             Nodo Borrar = null;
-            if (Aux.getProducto().getNombre().equals(producto.getNombre()) && Aux.getProducto().getPrecio() == producto.getPrecio()) {
+            if (Aux.getProducto().getNombre().equals(producto.getNombre()) && Aux.getProducto().getPrecio() == producto.getPrecio() && Aux.getProducto().getId().equals(producto.getId())) {
 		Borrar = Aux;
 		this.setCabeza(Borrar.getSiguiente());
             }else{
-		while (Aux.getSiguiente() != null && (!Aux.getSiguiente().getProducto().getNombre().equals(producto.getNombre())) && Aux.getSiguiente().getProducto().getPrecio() != producto.getPrecio()) {
+		while (Aux.getSiguiente() != null && (!Aux.getSiguiente().getProducto().getNombre().equals(producto.getNombre())) && Aux.getSiguiente().getProducto().getPrecio() != producto.getPrecio() && !Aux.getSiguiente().getProducto().getId().equals(producto.getId())) {
                     Aux = Aux.getSiguiente();
 		}
 		if (Aux.getSiguiente() != null) {
@@ -116,7 +116,7 @@ public class Lista {
         if(!this.isEmpty()){
             Nodo Aux = this.getCabeza();
             while(Aux != null && existe == false){
-                if(Aux.getProducto().getNombre().equals(producto.getNombre()) && Aux.getProducto().getPrecio() == producto.getPrecio()){
+                if(Aux.getProducto().getNombre().equals(producto.getNombre()) && Aux.getProducto().getPrecio() == producto.getPrecio() && Aux.getProducto().getId().equals(producto.getId())){
                    existe = true;
                 }
                 Aux = Aux.getSiguiente();
