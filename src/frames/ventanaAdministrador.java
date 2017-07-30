@@ -37,7 +37,7 @@ import javax.swing.DefaultComboBoxModel;
 
 
 public class ventanaAdministrador extends javax.swing.JFrame {
-
+// prueba
     private Proceso proceso;
 
     public Proceso getProceso() {
@@ -160,7 +160,6 @@ public class ventanaAdministrador extends javax.swing.JFrame {
     private void initComponents() {
 
         lblVendedor = new javax.swing.JLabel();
-        btnSalirDelSistema = new javax.swing.JButton();
         btnAnterior = new javax.swing.JButton();
         btnEfectuarCompra = new javax.swing.JButton();
         btnDetalleDeVenta = new javax.swing.JButton();
@@ -183,17 +182,6 @@ public class ventanaAdministrador extends javax.swing.JFrame {
         lblVendedor.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
         lblVendedor.setForeground(new java.awt.Color(255, 255, 255));
         lblVendedor.setText("    Administrador    ");
-
-        btnSalirDelSistema.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
-        btnSalirDelSistema.setForeground(new java.awt.Color(255, 255, 255));
-        btnSalirDelSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Salir.png"))); // NOI18N
-        btnSalirDelSistema.setText("SALIR DEL SISTEMA");
-        btnSalirDelSistema.setBorderPainted(false);
-        btnSalirDelSistema.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirDelSistemaActionPerformed(evt);
-            }
-        });
 
         btnAnterior.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         btnAnterior.setForeground(new java.awt.Color(255, 255, 255));
@@ -372,9 +360,6 @@ public class ventanaAdministrador extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(btnSalirDelSistema)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addComponent(btnAnterior)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnDetalleDeVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -394,8 +379,7 @@ public class ventanaAdministrador extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(btnSalirDelSistema)
-                .addGap(11, 11, 11)
+                .addGap(62, 62, 62)
                 .addComponent(lblVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -412,28 +396,6 @@ public class ventanaAdministrador extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnSalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirDelSistemaActionPerformed
-        // TODO add your handling code here:
-        
-        // Se inicializa respuesta que es igual a un mensaje de error
-        int respuesta = JOptionPane.showConfirmDialog(null, "¿Esta seguro?", "Salir", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE);
-        
-        // Si la respuesta es igual al mensaje de error de la opcion "si"
-        if (respuesta == JOptionPane.YES_OPTION) {
-            
-            // Si pasa esto
-            try {
-                
-                // Esta ventana se cierra
-                this.dispose();
-                
-                // Si no pasa lo anterior, esto es lo que va a suceder
-            } catch (Exception ex) {
-
-            }
-        }
-    }//GEN-LAST:event_btnSalirDelSistemaActionPerformed
 
     private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
         // TODO add your handling code here:
@@ -1552,7 +1514,6 @@ public class ventanaAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton btnDetalleDeVenta;
     private javax.swing.JButton btnEfectuarCompra;
     private javax.swing.JButton btnModificacion;
-    private javax.swing.JButton btnSalirDelSistema;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
